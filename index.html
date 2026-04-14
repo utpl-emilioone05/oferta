@@ -3,75 +3,72 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Oferta Académica - UTPL</title>
-    <style>
-        body {
-            font-family: sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #f4f4f4;
-        }
-
-        header {
-            background: #002d55;
-            color: white;
-            padding: 20px;
-            text-align: center;
-            border-radius: 8px;
-        }
-
-        .facultad {
-            background: white;
-            margin: 20px 0;
-            padding: 15px;
-            border-left: 5px solid #ffcc00;
-            border-radius: 4px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        h2 {
-            color: #002d55;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 10px;
-        }
-
-        th,
-        td {
-            text-align: left;
-            padding: 12px;
-            border-bottom: 1px solid #ddd;
-        }
-
-        th {
-            background-color: #f9f9f9;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oferta Académica | UTPL</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
-    <header>
-        <h1>Oferta Académica Institucional</h1>
+    <header class="header">
+        <div class="container">
+            <h1>Universidad Técnica Particular de Loja</h1>
+            <p>Oferta Académica Institucional</p>
+        </div>
     </header>
 
-    <section class="facultad">
-        <h2>Facultad de Ingenierías y Arquitectura</h2>
-        <table>
-            <tr>
-                <th>Carrera</th>
-                <th>Título que otorga</th>
-            </tr>
-            <tr>
-                <td>Computación</td>
-                <td>Ingeniero/a en Tecnologías de la Información</td>
-            </tr>
-        </table>
-    </section>
+    <main class="container">
+        <section class="facultad">
+            <h2>Facultad de Ingenierías y Arquitectura</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Carrera</th>
+                            <th>Título que otorga</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Computación</td>
+                            <td>Ingeniero/a en Tecnologías de la Información</td>
+                        </tr>
+                        <tr>
+                            <td>Arquitectura</td>
+                            <td>Arquitecto/a</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
 
+        <section class="facultad">
+            <h2>Facultad de Ciencias Económicas y Empresariales</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Carrera</th>
+                            <th>Título que otorga</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Administración de Empresas</td>
+                            <td>Licenciado/a en Administración de Empresas</td>
+                        </tr>
+                        <tr>
+                            <td>Contabilidad y Auditoría</td>
+                            <td>Licenciado/a en Contabilidad y Auditoría</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Universidad Técnica Particular de Loja - Portal de Oferta Académica</p>
+    </footer>
 </body>
 
 </html>
