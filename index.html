@@ -2,73 +2,363 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oferta Académica | UTPL</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Oferta académica presencial de la Universidad Técnica Particular de Loja (UTPL), organizada por facultades." />
+  <title>Oferta Académica Presencial | UTPL</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <header class="header">
-        <div class="container">
-            <h1>Universidad Técnica Particular de Loja</h1>
-            <p>Oferta Académica Institucional</p>
+
+  <!-- ═══════════════════════════════ HEADER ═══════════════════════════════ -->
+  <header class="header" id="inicio">
+    <div class="header-inner container">
+      <div class="header-brand">
+        <div class="header-logo-mark" aria-hidden="true">
+          <span>UTPL</span>
         </div>
-    </header>
+        <div class="header-text">
+          <h1 class="header-title">Universidad Técnica Particular de Loja</h1>
+          <p class="header-subtitle">Modalidad Presencial · Oferta Académica 2026</p>
+        </div>
+      </div>
+      <div class="header-badge">
+        <span class="badge-dot" aria-hidden="true"></span>
+        Presencial
+      </div>
+    </div>
+    <div class="header-wave" aria-hidden="true"></div>
+  </header>
 
-    <main class="container">
-        <section class="facultad">
-            <h2>Facultad de Ingenierías y Arquitectura</h2>
-            <div class="table-container">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Carrera</th>
-                            <th>Título que otorga</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Computación</td>
-                            <td>Ingeniero/a en Tecnologías de la Información</td>
-                        </tr>
-                        <tr>
-                            <td>Arquitectura</td>
-                            <td>Arquitecto/a</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
+  <!-- ═══════════════════════════════ HERO STRIP ════════════════════════════ -->
+  <section class="hero-strip" aria-label="Introducción">
+    <div class="container hero-strip-inner">
+      <p class="hero-strip-text">
+        Explora nuestras <strong>5 facultades</strong> y <strong>28 carreras</strong> disponibles en modalidad
+        presencial. Formación de calidad, reconocida internacionalmente.
+      </p>
+      <a href="#facultades" class="hero-cta" id="btn-explorar">Explorar carreras</a>
+    </div>
+  </section>
 
-        <section class="facultad">
-            <h2>Facultad de Ciencias Económicas y Empresariales</h2>
-            <div class="table-container">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Carrera</th>
-                            <th>Título que otorga</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Administración de Empresas</td>
-                            <td>Licenciado/a en Administración de Empresas</td>
-                        </tr>
-                        <tr>
-                            <td>Contabilidad y Auditoría</td>
-                            <td>Licenciado/a en Contabilidad y Auditoría</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
-    </main>
+  <!-- ═══════════════════════════════ MAIN ════════════════════════════════ -->
+  <main id="facultades" class="main container">
 
-    <footer>
-        <p>&copy; 2026 Universidad Técnica Particular de Loja - Portal de Oferta Académica</p>
-    </footer>
+    <!-- ── Facultad 1: Ingenierías y Arquitectura ── -->
+    <article class="faculty-card" id="fac-ingenierias">
+      <header class="faculty-header">
+        <div class="faculty-icon" aria-hidden="true">🏛️</div>
+        <div>
+          <h2 class="faculty-name">Facultad de Ingenierías y Arquitectura</h2>
+          <p class="faculty-count">6 carreras disponibles</p>
+        </div>
+      </header>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Carrera</th>
+              <th scope="col">Título que otorga</th>
+              <th scope="col">Modalidad</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="row-num">01</td>
+              <td class="career-name">Arquitectura</td>
+              <td>Arquitecto/a</td>
+              <td><span class="badge-presencial">Presencial</span></td>
+            </tr>
+            <tr>
+              <td class="row-num">02</td>
+              <td class="career-name">Computación</td>
+              <td>Ingeniero/a en Tecnologías de la Información</td>
+              <td><span class="badge-presencial">Presencial</span></td>
+            </tr>
+            <tr>
+              <td class="row-num">03</td>
+              <td class="career-name">Ingeniería Civil</td>
+              <td>Ingeniero/a Civil</td>
+              <td><span class="badge-presencial">Presencial</span></td>
+            </tr>
+            <tr>
+              <td class="row-num">04</td>
+              <td class="career-name">Ingeniería Ambiental</td>
+              <td>Ingeniero/a Ambiental</td>
+              <td><span class="badge-presencial">Presencial</span></td>
+            </tr>
+            <tr>
+              <td class="row-num">05</td>
+              <td class="career-name">Ingeniería Industrial</td>
+              <td>Ingeniero/a Industrial</td>
+              <td><span class="badge-presencial">Presencial</span></td>
+            </tr>
+            <tr>
+              <td class="row-num">06</td>
+              <td class="career-name">Telecomunicaciones</td>
+              <td>Ingeniero/a en Telecomunicaciones</td>
+              <td><span class="badge-presencial">Presencial</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </article>
+
+    <!-- ── Facultad 2: Ciencias de la Salud ── -->
+    <article class="faculty-card" id="fac-salud">
+      <header class="faculty-header">
+        <div class="faculty-icon" aria-hidden="true">🩺</div>
+        <div>
+          <h2 class="faculty-name">Facultad de Ciencias de la Salud</h2>
+          <p class="faculty-count">4 carreras disponibles</p>
+        </div>
+      </header>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Carrera</th>
+              <th scope="col">Título que otorga</th>
+              <th scope="col">Modalidad</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="row-num">01</td>
+              <td class="career-name">Medicina</td>
+              <td>Médico/a</td>
+              <td><span class="badge-presencial">Presencial</span></td>
+            </tr>
+            <tr>
+              <td class="row-num">02</td>
+              <td class="career-name">Enfermería</td>
+              <td>Licenciado/a en Enfermería</td>
+              <td><span class="badge-presencial">Presencial</span></td>
+            </tr>
+            <tr>
+              <td class="row-num">03</td>
+              <td class="career-name">Fisioterapia</td>
+              <td>Licenciado/a en Fisioterapia</td>
+              <td><span class="badge-presencial">Presencial</span></td>
+            </tr>
+            <tr>
+              <td class="row-num">04</td>
+              <td class="career-name">Nutrición y Dietética</td>
+              <td>Licenciado/a en Nutrición y Dietética</td>
+              <td><span class="badge-presencial">Presencial</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </article>
+
+    <!-- ── Facultad 3: Ciencias Económicas y Empresariales ── -->
+    <article class="faculty-card" id="fac-economicas">
+      <header class="faculty-header">
+        <div class="faculty-icon" aria-hidden="true">📊</div>
+        <div>
+          <h2 class="faculty-name">Facultad de Ciencias Económicas y Empresariales</h2>
+          <p class="faculty-count">5 carreras disponibles</p>
+        </div>
+      </header>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Carrera</th>
+              <th scope="col">Título que otorga</th>
+              <th scope="col">Modalidad</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="row-num">01</td>
+              <td class="career-name">Administración de Empresas</td>
+              <td>Licenciado/a en Administración de Empresas</td>
+              <td><span class="badge-presencial">Presencial</span></td>
+            </tr>
+            <tr>
+              <td class="row-num">02</td>
+              <td class="career-name">Contabilidad y Auditoría</td>
+              <td>Licenciado/a en Contabilidad y Auditoría</td>
+              <td><span class="badge-presencial">Presencial</span></td>
+            </tr>
+            <tr>
+              <td class="row-num">03</td>
+              <td class="career-name">Economía</td>
+              <td>Economista</td>
+              <td><span class="badge-presencial">Presencial</span></td>
+            </tr>
+            <tr>
+              <td class="row-num">04</td>
+              <td class="career-name">Finanzas</td>
+              <td>Licenciado/a en Finanzas</td>
+              <td><span class="badge-presencial">Presencial</span></td>
+            </tr>
+            <tr>
+              <td class="row-num">05</td>
+              <td class="career-name">Turismo</td>
+              <td>Licenciado/a en Turismo</td>
+              <td><span class="badge-presencial">Presencial</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </article>
+
+    <!-- ── Facultad 4: Ciencias Sociales, Educación y Humanidades ── -->
+    <article class="faculty-card" id="fac-sociales">
+      <header class="faculty-header">
+        <div class="faculty-icon" aria-hidden="true">⚖️</div>
+        <div>
+          <h2 class="faculty-name">Facultad de Ciencias Sociales, Educación y Humanidades</h2>
+          <p class="faculty-count">8 carreras disponibles</p>
+        </div>
+      </header>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Carrera</th>
+              <th scope="col">Título que otorga</th>
+              <th scope="col">Modalidad</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="row-num">01</td>
+              <td class="career-name">Derecho</td>
+              <td>Abogado/a</td>
+              <td><span class="badge-presencial">Presencial</span></td>
+            </tr>
+            <tr>
+              <td class="row-num">02</td>
+              <td class="career-name">Psicología</td>
+              <td>Psicólogo/a</td>
+              <td><span class="badge-presencial">Presencial</span></td>
+            </tr>
+            <tr>
+              <td class="row-num">03</td>
+              <td class="career-name">Psicología Clínica</td>
+              <td>Psicólogo/a Clínico</td>
+              <td><span class="badge-presencial">Presencial</span></td>
+            </tr>
+            <tr>
+              <td class="row-num">04</td>
+              <td class="career-name">Comunicación</td>
+              <td>Licenciado/a en Comunicación</td>
+              <td><span class="badge-presencial">Presencial</span></td>
+            </tr>
+            <tr>
+              <td class="row-num">05</td>
+              <td class="career-name">Educación Básica</td>
+              <td>Licenciado/a en Ciencias de la Educación Básica</td>
+              <td><span class="badge-presencial">Presencial</span></td>
+            </tr>
+            <tr>
+              <td class="row-num">06</td>
+              <td class="career-name">Educación Inicial</td>
+              <td>Licenciado/a en Ciencias de la Educación Inicial</td>
+              <td><span class="badge-presencial">Presencial</span></td>
+            </tr>
+            <tr>
+              <td class="row-num">07</td>
+              <td class="career-name">Psicopedagogía</td>
+              <td>Licenciado/a en Psicopedagogía</td>
+              <td><span class="badge-presencial">Presencial</span></td>
+            </tr>
+            <tr>
+              <td class="row-num">08</td>
+              <td class="career-name">Artes Visuales</td>
+              <td>Licenciado/a en Artes Visuales</td>
+              <td><span class="badge-presencial">Presencial</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </article>
+
+    <!-- ── Facultad 5: Ciencias Exactas y Naturales ── -->
+    <article class="faculty-card" id="fac-exactas">
+      <header class="faculty-header">
+        <div class="faculty-icon" aria-hidden="true">🔬</div>
+        <div>
+          <h2 class="faculty-name">Facultad de Ciencias Exactas y Naturales</h2>
+          <p class="faculty-count">5 carreras disponibles</p>
+        </div>
+      </header>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Carrera</th>
+              <th scope="col">Título que otorga</th>
+              <th scope="col">Modalidad</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="row-num">01</td>
+              <td class="career-name">Biología</td>
+              <td>Biólogo/a</td>
+              <td><span class="badge-presencial">Presencial</span></td>
+            </tr>
+            <tr>
+              <td class="row-num">02</td>
+              <td class="career-name">Bioquímica y Farmacia</td>
+              <td>Bioquímico/a Farmacéutico/a</td>
+              <td><span class="badge-presencial">Presencial</span></td>
+            </tr>
+            <tr>
+              <td class="row-num">03</td>
+              <td class="career-name">Geología</td>
+              <td>Ingeniero/a Geólogo/a</td>
+              <td><span class="badge-presencial">Presencial</span></td>
+            </tr>
+            <tr>
+              <td class="row-num">04</td>
+              <td class="career-name">Agronegocios</td>
+              <td>Ingeniero/a en Agronegocios</td>
+              <td><span class="badge-presencial">Presencial</span></td>
+            </tr>
+            <tr>
+              <td class="row-num">05</td>
+              <td class="career-name">Alimentos</td>
+              <td>Ingeniero/a de Alimentos</td>
+              <td><span class="badge-presencial">Presencial</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </article>
+
+  </main>
+
+  <!-- ═══════════════════════════════ FOOTER ════════════════════════════════ -->
+  <footer class="footer" id="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="footer-logo-mark">UTPL</span>
+        <span class="footer-name">Universidad Técnica Particular de Loja</span>
+      </div>
+      <p class="footer-copy">
+        &copy; 2026 UTPL · Todos los derechos reservados ·
+        <span class="footer-note">Información correspondiente a la modalidad presencial</span>
+      </p>
+    </div>
+  </footer>
+
 </body>
 
 </html>
